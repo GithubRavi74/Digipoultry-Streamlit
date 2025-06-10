@@ -13,7 +13,7 @@ image = Image.open("logo.png")
 st.image(image, width=200)
 st.markdown("<br><br><br>", unsafe_allow_html=True)  # Line break
 st.markdown(
-    "<div style='font-size:22px;'>🐔 Enter chicken height in cm to predict its weight (kg).</div>",
+    "<div style='font-size:20px;'>🐔 Enter chicken height in cm to predict its weight (kg).</div>",
     unsafe_allow_html=True
 )
 
