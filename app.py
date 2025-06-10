@@ -8,6 +8,31 @@ model = pickle.load(open("model.pkl", "rb"))
 
 # App UI
 st.set_page_config(page_title="Chicken Weight Predictor", layout="centered")
+import streamlit as st
+
+# Custom CSS for black background and white text
+st.markdown("""
+    <style>
+    body {
+        background-color: black;
+        color: white;
+    }
+    .stApp {
+        background-color: black;
+        color: white;
+    }
+    .css-1cpxqw2 {  /* To override widget label text (Streamlit version-specific) */
+        color: white !important;
+    }
+    .stNumberInput input {
+        background-color: #222;
+        color: white;
+    }
+    </style>
+    """, unsafe_allow_html=True)
+
+
+
 from PIL import Image
 image = Image.open("logo.png")
 st.image(image, width=200)
