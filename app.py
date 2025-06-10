@@ -10,7 +10,7 @@ model = pickle.load(open("model.pkl", "rb"))
 st.set_page_config(page_title="Chicken Weight Predictor", layout="centered")
 from PIL import Image
 image = Image.open("logo.png")
-st.image(image, width=300)
+st.image(image, width=200)
 
 st.markdown(
     "<div style='font-size:22px;'>🐔 Enter chicken height in cm to predict its weight (kg).</div>",
