@@ -16,7 +16,7 @@ st.markdown(
     "<div style='font-size:22px;'>🐔 Enter chicken height in cm to predict its weight (kg).</div>",
     unsafe_allow_html=True
 )
-
+st.markdown("<br><br>", unsafe_allow_html=True)  # Line break
 # Input
 height = st.number_input( "",min_value=0.0, step=0.1)
 
