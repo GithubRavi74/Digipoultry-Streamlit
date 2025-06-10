@@ -11,9 +11,9 @@ st.set_page_config(page_title="Chicken Weight Predictor", layout="centered")
 from PIL import Image
 image = Image.open("logo.png")
 st.image(image, width=200)
-st.markdown("<br><br><br>", unsafe_allow_html=True)  # Line break
+st.markdown("<br><br>", unsafe_allow_html=True)  # Line break
 st.markdown(
-    "<div style='font-size:20px;'>🐔 Enter chicken height in cm to predict its weight (kg).</div>",
+    "<div style='font-size:15px;'>🐔 Enter chicken height in cm to predict its weight (kg).</div>",
     unsafe_allow_html=True
 )
 
