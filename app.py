@@ -11,7 +11,7 @@ st.set_page_config(page_title="🐔 Chicken Weight Predictor", layout="centered"
 st.title("🐔 Chicken Weight Predictor")
 from PIL import Image
 image = Image.open("logo.png")
-st.image(image, caption="Healthy Poultry Example", use_column_width=True)
+st.image(image, caption="Healthy Poultry Example", width=300)
 
 st.markdown("Enter chicken height in cm to predict its weight (kg).")
 
