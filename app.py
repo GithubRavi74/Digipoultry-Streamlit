@@ -12,7 +12,10 @@ from PIL import Image
 image = Image.open("logo.png")
 st.image(image, width=300)
 
-st.markdown("🐔 Enter chicken height in cm to predict its weight (kg).")
+st.markdown(
+    "<div style='font-size:22px;'>🐔 Enter chicken height in cm to predict its weight (kg).</div>",
+    unsafe_allow_html=True
+)
 
 # Input
 height = st.number_input("Enter chicken height (cm):", min_value=0.0, step=0.1)
