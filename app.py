@@ -18,7 +18,7 @@ st.markdown(
 )
 
 # Input
-height = st.number_input("Enter chicken height (cm):", min_value=0.0, step=0.1)
+height = st.number_input( min_value=0.0, step=0.1)
 
 # Prediction
 if st.button("Predict Weight"):
